@@ -1,0 +1,21 @@
+/* bugSolution.css */
+
+/* Avoid using :nth-child for dynamic content. Apply styles directly using JavaScript */
+
+// JavaScript code to target specific elements directly
+const elements = document.querySelectorAll('.dynamic-element');
+elements.forEach((element, index) => {
+  if ((index + 1) % 2 === 0) {
+    element.classList.add('even');
+  } else {
+    element.classList.add('odd');
+  }
+});
+
+/* Example to use a class instead */
+.even {
+  background-color: #f0f0f0;
+}
+.odd {
+  background-color: #fff;
+} 
